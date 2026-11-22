@@ -1,0 +1,25 @@
+let Minute_1 = 0
+let Minute_2 = 0
+let Stunde_1 = 0
+let Stunde_2 = 0
+let _4digit = 0
+basic.forever(function () {
+    _4digit.bit(Minute_1, 0)
+    _4digit.bit(Minute_2, 1)
+    _4digit.bit(Stunde_1, 2)
+    _4digit.bit(Stunde_2, 3)
+    if (Minute_2 == 10) {
+        Minute_2 = 0
+        Minute_2 += 1
+    } else if (Minute_1 == 6) {
+        Minute_1 = 0
+        Stunde_2 += 1
+    } else if (Minute_2 == 10) {
+        Minute_2 = 0
+        Stunde_2 += 1
+    } else if (Stunde_1 == 6) {
+    	
+    } else {
+    	
+    }
+})
