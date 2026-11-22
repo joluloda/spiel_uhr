@@ -14,12 +14,13 @@ basic.forever(function () {
     } else if (Minute_1 == 6) {
         Minute_1 = 0
         Stunde_2 += 1
-    } else if (Minute_2 == 10) {
+    } else if (Stunde_2 == 10) {
+        Stunde_2 = 0
+        Stunde_1 += 1
+    } else if (Stunde_1 == 2 && Stunde_2 == 4) {
+        Minute_1 = 0
         Minute_2 = 0
-        Stunde_2 += 1
-    } else if (Stunde_1 == 6) {
-    	
-    } else {
-    	
+        Stunde_1 = 0
+        Stunde_2 = 0
     }
 })
